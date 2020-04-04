@@ -14,7 +14,7 @@ var app=express()
 
 
 app.use(bodyParser.json()); 
-app.use(express.static('docs'))
+app.use(express.static('./'))
 app.use(bodyParser.urlencoded({ 
 	extended: true
 })); 
