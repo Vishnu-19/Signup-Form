@@ -49,7 +49,9 @@ res.set({
 	'Access-control-Allow-Origin': '*'
 	}); 
 return res.redirect('index.html'); 
-}).listen(3000) 
+})
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
 
 
-console.log("server listening at port 3000"); 
